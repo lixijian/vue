@@ -1,0 +1,382 @@
+/* 
+* @Author: xiaoli
+* @Date:   2019-11-18
+* @Last Modified by:   xiaoli
+* @Last Modified time: 2019-11-18
+*/
+
+@import "ys.less";
+.transform {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+  
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    /* Other transform properties here */
+ }
+
+.yidong(@name,@tm1,@tm2,@tm3,@a,@b,@c){
+    @keyframes @name
+    {
+        0% {
+            .donghua(@a);
+            opacity:@tm1;
+            filter:alpha(opacity=@tm1);
+        }
+        50% {
+            .donghua(@b);
+            opacity:@tm2;
+            filter:alpha(opacity=@tm2);
+        }
+        100% {
+            .donghua(@c);
+            opacity:@tm3;
+            filter:alpha(opacity=@tm3);
+        }
+    }
+    @-moz-keyframes @name /* Firefox */
+    {
+        0% {
+            .donghua(@a);
+            opacity:@tm1;
+            filter:alpha(opacity=@tm1);
+        }
+        50% {
+            .donghua(@b);
+            opacity:@tm2;
+            filter:alpha(opacity=@tm2);
+        }
+        100% {
+            .donghua(@c);
+            opacity:@tm3;
+            filter:alpha(opacity=@tm3);
+        }
+    }
+
+    @-webkit-keyframes @name /* Safari 和 Chrome */
+    {
+        0% {
+            .donghua(@a);
+            opacity:@tm1;
+            filter:alpha(opacity=@tm1);
+        }
+        50% {
+            .donghua(@b);
+            opacity:@tm2;
+            filter:alpha(opacity=@tm2);
+        }
+        100% {
+            .donghua(@c);
+            opacity:@tm3;
+            filter:alpha(opacity=@tm3);
+        }
+    }
+
+    @-o-keyframes @name /* Opera */
+    {
+        0% {
+            .donghua(@a);
+            opacity:@tm1;
+            filter:alpha(opacity=@tm1);
+        }
+        50% {
+            .donghua(@b);
+            opacity:@tm2;
+            filter:alpha(opacity=@tm2);
+        }
+        100% {
+            .donghua(@c);
+            opacity:@tm3;
+            filter:alpha(opacity=@tm3);
+        }
+    }
+}
+.yidong2(@name,@tm1,@tm3,@a,@c){
+    @keyframes @name
+    {
+        0% {
+            .donghua(@a);
+            opacity:@tm1;
+            filter:alpha(opacity=@tm1);
+        }
+        100% {
+            .donghua(@c);
+            opacity:@tm3;
+            filter:alpha(opacity=@tm3);
+        }
+    }
+    @-moz-keyframes @name /* Firefox */
+    {
+        0% {
+            .donghua(@a);
+            opacity:@tm1;
+            filter:alpha(opacity=@tm1);
+        }
+        100% {
+            .donghua(@c);
+            opacity:@tm3;
+            filter:alpha(opacity=@tm3);
+        }
+    }
+
+    @-webkit-keyframes @name /* Safari 和 Chrome */
+    {
+        0% {
+            .donghua(@a);
+            opacity:@tm1;
+            filter:alpha(opacity=@tm1);
+        }
+        100% {
+            .donghua(@c);
+            opacity:@tm3;
+            filter:alpha(opacity=@tm3);
+        }
+    }
+
+    @-o-keyframes @name /* Opera */
+    {
+        0% {
+            .donghua(@a);
+            opacity:@tm1;
+            filter:alpha(opacity=@tm1);
+        }
+        100% {
+            .donghua(@c);
+            opacity:@tm3;
+            filter:alpha(opacity=@tm3);
+        }
+    }
+}
+.yincang(@name,@a,@b){
+    @keyframes @name
+    {
+        0% {
+            opacity:@a;
+            filter:alpha(opacity=@a);
+            
+        }
+        100% {
+            opacity:@b;
+            filter:alpha(opacity=@b);
+        }
+    }
+    @-moz-keyframes @name /* Firefox */
+    {
+        0% {
+            opacity:@a;
+            filter:alpha(opacity=@a);
+        }
+        100% {
+            opacity:@b;
+            filter:alpha(opacity=@b);
+        }
+    }
+
+    @-webkit-keyframes @name /* Safari 和 Chrome */
+    {
+        0% {
+            opacity:@a;
+            filter:alpha(opacity=@a);
+        }
+        100% {
+            opacity:@b;
+            filter:alpha(opacity=@b);
+        }
+    }
+
+    @-o-keyframes @name /* Opera */
+    {
+        0% {
+            opacity:@a;
+            filter:alpha(opacity=@a);
+        }
+        100% {
+            opacity:@b;
+            filter:alpha(opacity=@b);
+        }
+    }
+}
+
+.chuxian(@name,@tm1,@tm2,@a1,@a2,@b1,@b2){
+    @keyframes @name
+    {
+        0% {
+            @{a1}:@a2;
+            opacity:@tm1;
+            filter:alpha(opacity=@tm1);
+        }
+        100% {
+            @{b1}:@b2;
+            opacity:@tm2;
+            filter:alpha(opacity=@tm2);
+        }
+    }
+    @-moz-keyframes @name /* Firefox */
+    {
+        0% {
+            @{a1}:@a2;
+            opacity:@tm1;
+            filter:alpha(opacity=@tm1);
+        }
+        100% {
+            @{b1}:@b2;
+            opacity:@tm2;
+            filter:alpha(opacity=@tm2);
+        }
+    }
+
+    @-webkit-keyframes @name /* Safari 和 Chrome */
+    {
+        0% {
+            @{a1}:@a2;
+            opacity:@tm1;
+            filter:alpha(opacity=@tm1);
+        }
+        100% {
+            @{b1}:@b2;
+            opacity:@tm2;
+            filter:alpha(opacity=@tm2);
+        }
+    }
+
+    @-o-keyframes @name /* Opera */
+    {
+        0% {
+            @{a1}:@a2;
+            opacity:@tm1;
+            filter:alpha(opacity=@tm1);
+        }
+        100% {
+            @{b1}:@b2;
+            opacity:@tm2;
+            filter:alpha(opacity=@tm2);
+        }
+    }
+}
+.daxiao(@name,@a1,@a2,@b1,@b2){
+    @keyframes @name
+    {
+        0% {
+            width: @a1;
+            height:@b1;
+        }
+        100% {
+            width: @a2;
+            height:@b2;
+        }
+    }
+    @-moz-keyframes @name /* Firefox */
+    {
+        0% {
+            width: @a1;
+            height:@b1;
+        }
+        100% {
+            width: @a2;
+            height:@b2;
+        }
+    }
+
+    @-webkit-keyframes @name /* Safari 和 Chrome */
+    {
+        0% {
+            width: @a1;
+            height:@b1;
+        }
+        100% {
+            width: @a2;
+            height:@b2;
+        }
+    }
+
+    @-o-keyframes @name /* Opera */
+    {
+        0% {
+            width: @a1;
+            height:@b1;
+        }
+        100% {
+            width: @a2;
+            height:@b2;
+        }
+    }
+}
+
+.beijing1(@name,@a1,@a2){
+    @keyframes @name
+    {
+        0% {
+            background-position-y:@a1;
+            
+        }
+        100% {
+            background-position-y:@a2;
+        }
+    }
+    @-moz-keyframes @name /* Firefox */
+    {
+        0% {
+            background-position-y:@a1;
+            
+        }
+        100% {
+            background-position-y:@a2;
+        }
+    }
+
+    @-webkit-keyframes @name /* Safari 和 Chrome */
+    {
+        0% {
+            background-position-y:@a1;
+            
+        }
+        100% {
+            background-position-y:@a2;
+        }
+    }
+
+    @-o-keyframes @name /* Opera */
+    {
+        0% {
+            background-position-y:@a1;
+            
+        }
+        100% {
+            background-position-y:@a2;
+        }
+    }
+}
+
+// 导航
+.chuxian(daohang,1,1,bottom,0%,bottom,-142px);
+.chuxian(daohang2,1,1,bottom,-142px,bottom,-142px);
+
+.beijing1(beijing1,0,-142px);
+.beijing1(beijing11,-142px,-142px);
+
+
+// 对联出现
+.daxiao( duilian,auto,auto,0px,100% );
+.yincang(yincang,1,0);
+// 横批出现
+.yincang(tou,0,1);
+
+// 左右出现
+.chuxian(zuo,0.4,1,left,-10%,left,0);
+.chuxian(you,0.4,1,right,-10%,right,0);
+
+
+// 龙动特效
+.yidong(dong,1,1,1,translate(0%, 0%),translate(0%, 0.3%),translate(0%, 0%));
+// 龙的光效
+.yidong(guang2,0.4,1,0.4,scale(1) translate(0%, -50%),scale(1.04) translate(0%, -50%), scale(1) translate(0%, -50%));
+// 佛祖的光效
+.yidong(guang1,0.4,1,0.4,scale(1),scale(1.04),scale(1));
+.yidong(guang1-1,0.4,1,0.4,scale(1) translate(0%, 50%),scale(1.04) translate(0%, 50%),scale(1) translate(0%, 50%));
+// logo特效
+.yidong2(logo,0,1,translate(-50%, -30%),translate(-50%, -50%));
+.yidong2(logo2,0,1,translate(-50%, -50%),translate(-50%, -50%));

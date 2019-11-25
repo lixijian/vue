@@ -1,0 +1,26 @@
+﻿
+.ie8Img img{
+  width: 100%;
+  height: 100%;
+}
+
+.bg .zrulaibg,
+.bg .zrulai,
+.bg .zlongbg,
+.bg .zlong
+{
+ background: none;
+}
+.bg .logo{
+  margin-top: -145px;
+  margin-left: -145px;
+  opacity: 1;
+}
+.bg .toubox{
+  margin-top: -220px;
+  margin-left: -240px;
+}
+.bg .zlongdw{
+  top:auto;
+  bottom:5%;
+}

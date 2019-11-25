@@ -1,0 +1,102 @@
+
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #ccc;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #ccc;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #ccc;
+} 
+.block(@block:block){
+    display:@block;
+}
+.cc(@cc:#fff){
+    color:@cc;
+}
+.fz(@fz:18px){
+    font-size: @fz;
+}
+.bgMr(@bg:#cb1c1d){
+    background: @bg;
+}
+.bgcMr(@bg:#cb1c1d){
+    background-color: @bg;
+}
+.bgMrh(@bg:#b51a1a){
+    background: @bg;
+}
+.bgMr2(@bg:#297dbb){
+    background: @bg;
+}
+.ccMr(@cc:#cb1c1d){
+    color:@cc;
+}
+.ccMrh(@cc:#b51a1a){
+    color:@cc;
+}
+.ccMr2(@cc:#297dbb){
+    color:@cc;
+}
+@ysmr: #cb1c1d;
+@ysmrh: #b51a1a;
+.bdrd(@clamp:18px){
+    -webkit-border-radius:@clamp;
+       -moz-border-radius:@clamp;
+        -ms-border-radius:@clamp;
+         -o-border-radius:@clamp;
+            border-radius:@clamp;
+}
+.shadow(@clamp:rgba(0,0,0,0.15)){
+    -moz-box-shadow:0px 3px 5px @clamp;
+    -webkit-box-shadow:0px 3px 5px @clamp;
+    box-shadow:0px 3px 5px @clamp;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=125, Strength=9);
+}
+.shadow2(@a:1px; @b:2px){
+    -moz-box-shadow: 0px @a @b rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px @a @b rgba(0,0,0,0.15);
+    box-shadow: 0px @a @b rgba(0,0,0,0.15);
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=125, Strength=9);
+}
+
+.all(@all:.5s){
+    -webkit-transition: all @all ease;
+       -moz-transition: all @all ease;
+        -ms-transition: all @all ease;
+         -o-transition: all @all ease;
+            transition: all @all ease;
+}
+.donghua(@all:scale(1.1)){
+    -webkit-transform:  @all ;
+       -moz-transform:  @all ;
+        -ms-transform:  @all ;
+         -o-transform:  @all ;
+            transform:  @all ;
+}
+.szdonghua(@all:all 2s ease){
+    -webkit-animation: @all;
+       -moz-animation: @all;
+        -ms-animation: @all;
+         -o-animation: @all;
+            animation: @all;
+}
+
+
+.textOvh(@ellipsis:ellipsis){
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: @ellipsis;
+}
+.textOvhs(@clamp:3){
+    display: box;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @clamp;
+}

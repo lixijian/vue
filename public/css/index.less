@@ -1,0 +1,426 @@
+@import "xl-bootstrap.css";
+@import "ys.less";
+@import "xing.css";
+@import "logo.css";
+@import "donghua.less";
+
+.bg{
+    position: relative;
+    width: 100%;height: 100%;
+    background: url('../images/bg.jpg') no-repeat center center;
+    background-size:cover ;
+    .zhongxin{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        .donghua(translate(-50%, -50%));
+        width: 100%;
+        height: 100%;
+        max-width: 1920px;
+        max-height: 1080px;
+        z-index: 99;
+        .activeBox{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            .donghua(translate(-50%, -40%));
+            width: 1000px;
+            height: 500px;
+            overflow-x: hidden;
+            text-align: center;
+            z-index:80;
+            img{
+                display: inline-block;
+            }
+        }
+        .activeBox::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width : 2px;  /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+        }
+        .activeBox::-webkit-scrollbar-thumb {
+        /*滚动条里面小方块*/
+        border-radius   : 2px;
+        background-color: #d63120;
+        }
+        .activeBox::-webkit-scrollbar-track {
+        /*滚动条里面轨道*/
+        background   : #f1f1f1;
+        border-radius: 2px;
+        }
+       
+    }
+}
+.bg .navBox{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 392px;
+    height: 142px;
+    z-index: 99;
+    .nav{
+        width: 56px;
+        height: 142px;
+        display: block;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        background: url('../images/nav.png') no-repeat ;
+        background-size:392px 284px;
+        
+        
+        &:hover{
+            .szdonghua(beijing1 .6s ease-out);
+            animation-fill-mode:forwards;
+        }
+        &.dq,
+        &.router-link-exact-active{
+            background-position-y:-142px;
+            .szdonghua(beijing11 .6s ease-out);
+            animation-fill-mode:forwards;
+            
+        }
+    }
+    .nav1{
+        background-position:0px 0px;
+    }
+    .nav2{
+        background-position:-56px 0px;
+    }
+    .nav3{
+        background-position:-112px 0px;
+    }
+    .nav4{
+        background-position:-168px 0px;
+    }
+    .nav5{
+        background-position:-224px 0px;
+    }
+    .nav6{
+        background-position:-280px 0px;
+    }
+    .nav7{
+        background-position:-336px 0px;
+    }
+}
+.bg .logo{
+  opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    .donghua(translate(-50%, -50%));
+    .szdonghua(logo 4s 8s ease);
+    animation-fill-mode:forwards;
+    z-index: 999;
+    
+}
+.bg .logozi{
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      margin-left: -160px;
+      animation-fill-mode:forwards;
+      z-index: 10;
+      img{
+          
+      }
+      
+  }
+.bg .duilianbox{
+    z-index: 50;
+    position: absolute;
+    top: 50%;left: 50%;
+    .donghua(translate(-50%, -50%));
+    width:600px;
+    height: 660px;
+    .szdonghua(yincang 0.5s 7s ease);
+    animation-fill-mode:forwards;
+    
+    
+}
+.bg .duilian{
+  overflow: hidden;
+  width: 180px;
+    /* opacity: 0; */
+    height: 0;
+    // box-shadow: 0 0 60px rgba(255, 255, 0, 1);
+    img{
+        
+    }
+    
+    
+}
+.bg .duilian img{
+  width: 100%;
+}
+.bg .duilian1{
+    .szdonghua(duilian 4s 2s ease);
+    animation-fill-mode:forwards
+}
+.bg .duilian2{
+    .szdonghua(duilian 4s ease);
+    animation-fill-mode:forwards
+}
+.bg .logo2{
+    position: absolute;
+    top: 2%;left: 2%;
+    z-index: 88;
+}
+.bg .zi{
+    position: absolute;
+    top: 50%;left: 50%;
+    .donghua(translate(-50%, -50%));
+}
+.bg .zrulaidw{
+    width: 400px;
+    height: 653px;
+    position: absolute;
+    bottom: 0%;left: 0%;
+}
+.bg .zrulaibox{
+    .szdonghua(zuo 0.6s ease-out);
+}
+.bg .zrulaibg{
+    background: url('../images/zrulaibg.png') no-repeat center center;
+    background-size:cover;
+
+}
+.bg .zrulai{
+    width: 100%;
+    height: 100%;
+    background: url('../images/zrulai.png') no-repeat center center;
+    background-size:cover;
+}
+.bg .zlongdw{
+    width: 560px;
+    height: 565px;
+    position: absolute;
+    top: 50%;right: 0%;
+    .donghua(translate(0%, -50%));
+}
+.bg .zlongbox{
+
+    .szdonghua(you 0.6s ease-out);
+}
+.bg .zlongbg{
+
+    .donghua(translate(0%, -50%));
+    background: url('../images/zlongbg.png') no-repeat center center;
+    background-size:cover;
+}
+.bg .zlong{
+    width: 100%;
+    height: 100%;
+    .szdonghua(dong 2s infinite ease);
+    background: url('../images/zlong.png') no-repeat center center;
+    background-size:cover;
+}
+.bg .guang1{
+    .szdonghua(guang1 4.2s infinite ease-out);
+}
+.bg .guang2{
+    .szdonghua(guang2 4.2s infinite ease-out);
+}
+.bg .footer{
+  width: 100%;
+  text-align: center;
+  color:#5e4d44;
+  font-size: 12px;
+  position: absolute;
+  bottom:10px;
+  left:0;
+}
+
+
+
+
+
+.xings2, .ydBox, .yd-navBox{
+    display: none;
+}
+
+
+@media (min-width: 1930px) {
+    .bg{
+        .zrulaidw{
+            bottom: 0%;left: 0%;
+        }
+        .zrulaibg{
+            .szdonghua(guang1-1 4.2s infinite ease-out);
+        }
+        
+    }
+    
+}
+
+
+@media (max-width: 1600px) {
+    .bg {
+        .zrulaidw{
+            width: 300px;
+            height: 490px;
+        }
+        .zlongdw{
+            width: 400px;
+            height: 400px;
+        }
+    }
+    
+}
+
+
+@media (max-width: 1400px) {
+    .bg {
+        .zrulaidw{
+            width: 250px;
+            height: 408px;
+        }
+        .zlongdw{
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    
+    body.on:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 8888;
+    }
+    
+    .yd-nav-box {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        width: 100%;
+        display: block;
+        height: 60px;
+      }
+      .yd-nav-box a.fl {
+    
+      }
+      .yd-nav-box .yd-logo{
+          width: 70px;
+          img{
+              width: 100%;
+          }
+      }
+      .yd-nav {
+        width: 30px;
+        // height: 30px;
+        
+        padding: 20px 0 0px;
+        margin-right: 10px;
+        float: right;
+        cursor: pointer;
+      }
+      .yd-nav.on {
+        padding-top: 24px;
+      }
+      .yd-nav.on span {
+        display: none;
+      }
+      .yd-nav.on span:first-child {
+        display: inline-block;
+        -webkit-transform: rotate(45deg);
+      }
+      .yd-nav.on span:first-child:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: #ff0;
+        -webkit-transform: rotate(-90deg);
+      }
+      
+      .yd-nav span {
+        float: right;
+        display: block;
+        width: 100%;
+        height: 4px;
+        margin: 0px 0 5px;
+        border-radius: 4px;
+        .shadow2(1px;2px);
+        background: #ff0;
+      }
+      .yd-nav span:nth-of-type(2){
+        width: 86%;
+      }
+      .yd-text{
+        position: fixed;
+        top: 0px;
+        right: -200px;
+        padding-top:40px;
+        z-index: 9999;
+        width: 200px;
+        height: 100%;
+        background: #d63120 url('../images/zlong.png') no-repeat bottom right;
+        background-size: 100%;
+        
+        .yijiNav{
+            width: 100%;
+            a{
+                display: block;
+                width: 100%;
+                height: 42px;
+                line-height: 42px;
+                color:#fff;
+                text-align: center;
+            }
+        }
+      }
+    
+}
+
+@media (max-width: 720px) {
+    .nava{
+        display: none;
+    }
+    .ydBox{
+        display: block;
+    }
+    .bg{
+        .logo{
+            width: 70%;
+            .szdonghua(logo2 2s 12s ease);
+            animation-fill-mode:forwards;
+        }
+        .footer{
+            font-size: 12px;
+        }
+        .duilianbox{
+            width: 80%;
+            height: 468px;
+        }
+        .duilian{
+            width: 80px;
+        }
+        
+    }
+    .xings2{
+        display: block;
+    }
+    .pcBox, .nava, .xings{
+        display: none;
+    }
+}
+@media (max-width: 540px) {
+    .bg{
+        .duilianbox{
+            width: 76%;
+            height: 351px;
+        }
+        .duilian{
+            width: 60px;
+        }
+        
+    }
+}
