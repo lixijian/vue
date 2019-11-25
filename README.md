@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # project-one
 
 ## Project setup
@@ -27,3 +28,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# vue
+vue练习
+>>>>>>> 71b1f2aa19649d992959644a4bdd2ed4290e49cd
